@@ -1,0 +1,55 @@
+/*---PRICE---*/
+.eyebrows {
+  text-align: center;
+  padding: 5rem 0;
+}
+.eyebrows .main-logo-nav {
+  margin-bottom: 3rem;
+}
+.table-wrapper {
+  margin: 0 10%;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #edc65a;
+}
+table {
+  color: #fff;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 6px;
+  margin-bottom: 1em;
+}
+.table-title {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.table-title-little {
+  font-size: 1.3em;
+}
+.table-left {
+  text-align: left;
+}
+.table-item-title {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #fff;
+}
+.table-item-subtitle {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+}
+.table-item-price {
+  font-weight: 500;
+  vertical-align: middle;
+}
+.stock {
+  line-height: 2;
+  margin-bottom: 3em;
+}
+.stock-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #edc65a;
+}

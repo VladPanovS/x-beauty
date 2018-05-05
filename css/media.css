@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  /*GENERAL*/
+  header {
+    width: 0;
+    display: block;
+  }
+  main {
+    width: 100%;
+  }
+  .lists li {
+    width: 98%;
+  }
+  /*-------*/
+  .logo-nav {
+     display: none;
+  }
+  .main-header, {
+    background-attachment: scroll;
+  }
+}
