@@ -7,6 +7,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+section {
+  overflow: hidden;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -59,12 +62,11 @@ a:active {
   vertical-align: middle;
 }
 .lists p {
-  margin: 0 5%;
   font-size: 0.9em;
   font-weight: 300;
   line-height: 2;
   text-align: left;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .lists li img {
   width: 100%;
@@ -130,6 +132,35 @@ main {
 .social-links a:hover {
   color: #edc65a;
 }
+/*---PRELOADER---*/
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #333;
+  text-align: center;
+}
+#preloader::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  vertical-align: middle;
+}
+.load {
+  display: inline-block;
+  height: 3em;
+  width: 3em;
+  border: 5px solid #bbb;
+  border-radius: 50%;
+  border-right: 5px solid #bea67c;
+  animation: spin 4s linear infinite;
+  vertical-align: middle;
+}
 /*----------------------*/
 /*logo-nav*/
 .main-logo-nav {
@@ -161,6 +192,11 @@ main {
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   padding: 0.8em 0;
+}
+.logo-nav .contact-info h2 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
 }
 .logo-nav .contact-info p {
   color: #fff;
@@ -218,6 +254,21 @@ main {
   text-align: center;
 }
 /*---CONTACTS---*/
+.school {
+  padding: 2em 2.5em;
+}
+.school-slider .img-box-wrp {
+  min-width: 10em;
+  width: 50%;
+}
+.school-slider .img-box {
+  margin: 0 10px;
+  border: 1px solid #fff;
+}
+.school-slider img {
+  width: 100%;
+}
+/*---CONTACTS---*/
 .contact-socials-box {
   background: url("../img/bg/header_bg.png") no-repeat center center;
   background-size: cover;
@@ -254,14 +305,14 @@ main {
 .social-info-list li a:hover img{
   transform: scale(1.1);
 }
-
-
 .contact-list li{
   height: 25em;
 }
 iframe {
   width: 100%;
   height: 100%;
+  frameborder: 0;
+  border: 0;
 }
 .contact-list li:last-child  {
   background: url("../img/bg/contact_bg.jpg") no-repeat center center;

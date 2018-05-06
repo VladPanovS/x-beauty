@@ -1,0 +1,62 @@
+.burger {
+  display: none;
+  width: 2.5em;
+  height: 1.5em;
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  cursor: pointer;
+  z-index: 101;
+}
+.burger span {
+  display: inline-block;
+  height: 3px;
+  width: 80%;
+  background: #edc65a;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.burger span:first-child {
+  left: 10%;
+  top: 1%;
+}
+.burger span:nth-child(2) {
+  left: 10%;
+  top: 46%;
+}
+.burger span:last-child {
+  left: 10%;
+  bottom: 1%;
+}
+/*---*/
+span.line-active:first-child {
+  transform: rotate(40deg);
+  top: 43%;
+}
+span.line-active:nth-child(2) {
+  opacity: 0;
+}
+span.line-active:last-child {
+  transform: rotate(-40deg);
+  bottom: 45%;
+}
+/*--CLASSES--*/
+/*.menu {
+  background: rgba(220, 220, 220, 0.8);
+  position: fixed;
+  top: 10rem;
+  left: 2%;
+  padding: 0;
+  height: 0;
+  width: 96%;
+  overflow: auto;
+  transition: all 2s ease-out;
+  text-align: center;
+}
+.open {
+  height: calc(100% - (10rem + 4%));
+}
+.rotate {
+  animation: spin 6s infinite;
+  animation-delay: 2s;
+} */

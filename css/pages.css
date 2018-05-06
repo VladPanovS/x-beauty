@@ -1,7 +1,19 @@
 /*---PRICE---*/
+.eyebrows::before {
+  content: "Прайс";
+  text-transform: uppercase;
+  font-size: 10vw;
+  font-weight: 500;
+  color: rgba(190, 166, 124, 0.5);
+  position: absolute;
+  top: 0.3em;
+  left: 25%;
+  z-index: -1;
+}
 .eyebrows {
   text-align: center;
-  padding: 5rem 0;
+  padding: 15% 0 5rem 0;
+  position: relative;
 }
 .eyebrows .main-logo-nav {
   margin-bottom: 3rem;
@@ -52,4 +64,31 @@ table {
   font-weight: 500;
   font-size: 1.2em;
   color: #edc65a;
+}
+/*---PROFFESIONALS---*/
+.masters::before {
+  content: "Мастера";
+  text-transform: uppercase;
+  font-size: 10vw;
+  font-weight: 500;
+  color: rgba(190, 166, 124, 0.5);
+  position: absolute;
+  top: 0.3em;
+  left: 20%;
+  z-index: -1;
+}
+.masters {
+  padding-top: 10rem;
+  position: relative;
+}
+.masters-list {
+  text-align: center;
+}
+.masters-list li{
+  display: inline-block;
+  min-width: 8em;
+  width: 23%;
+  height: 15em;
+  margin: 0.5em;
+  background: #bbb;
 }

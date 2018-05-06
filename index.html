@@ -9,15 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <!---CSS-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/burgermenu.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
   </head>
 
   <body>
+    <div id="preloader" class="f_box-c_c">
+      <div class="load">
+      </div>
+    </div>
     <header>
-      <div class="logo-nav">
+      <div class="logo-nav hiden">
         <a href="#top">
           <h1 class="logo">
             <img src="img/logo.png" alt="X-beauty by Hanna logo" class="main-logo-nav">
@@ -26,8 +33,8 @@
         <nav class="nav-aside">
           <p><a href="index.html" class="link">Главная</a></p>
           <p><a href="pages/price.html" class="link">Прайс</a></p>
-          <p><a href="#" class="link">Учебный центр</a></p>
-          <p><a href="#" class="link">Галерея</a></p>
+          <p><a href="#education" class="link school-link">Учебный центр</a></p>
+          <p><a href="pages/proffesionals.html" class="link">Мастера</a></p>
           <p><a href="#contact" class="link contact-link">Контакты</a></p>
         </nav>
         <div class="contact-info">
@@ -40,9 +47,15 @@
           </p>
           <div class="social-links">
             <a href="https://www.instagram.com/xbeautybyhanna" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="https://vk.com/xbeauty_by_hanna"><i class="fab fa-vk"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
           </div>
+        </div>
+      </div>
+      <div class="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
     </header>
     <main>
@@ -60,10 +73,10 @@
       <section class="services">
         <a id="main-content"></a>
         <ul class="lists services-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
             <img src="img/pic/services_one.jpg" alt="маникюр">
           </li>
-          <li>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
             <div class="lists-wrapper">
                 <h2 class="title">Маникюр</h2>
                 <p>Косметическая процедура по обработке ногтей на пальцах рук и самих пальцев, а то и всей кисти рук.</p>
@@ -72,7 +85,10 @@
           </li>
         </ul>
         <ul class="lists services-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_two.jpg" alt="окрашивание">
+          </li>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
             <div class="lists-wrapper">
                 <h2 class="title">Окрашивание</h2>
                 <p>Нанесение красящего вещества на волосы. Окрашивают волосы с
@@ -80,15 +96,12 @@
                 <a href="pages/price.html" class="button">Посмотреть прайс</a>
             </div>
           </li>
-          <li>
-            <img src="img/pic/services_two.jpg" alt="окрашивание">
-          </li>
         </ul>
         <ul class="lists services-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
             <img src="img/pic/services_three.jpg" alt="наращивание ресниц">
           </li>
-          <li>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
             <div class="lists-wrapper">
                 <h2 class="title">Наращивание ресниц</h2>
                 <p>Процесс удлинения и увеличения объема натуральных ресниц при
@@ -99,7 +112,10 @@
           </li>
         </ul>
         <ul class="lists services-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_one.jpg" alt="солярий">
+          </li class="wow slideInRight" data-wow-duration="1.5s">
+          <li class="wow slideInRight" data-wow-duration="1.5s">
             <div class="lists-wrapper">
                 <h2 class="title">Солярий</h2>
                 <p>Специально оборудованная открытая площадка для проведения
@@ -110,10 +126,32 @@
                 <a href="pages/price.html" class="button">Посмотреть прайс</a>
             </div>
           </li>
-          <li>
-            <img src="img/pic/services_one.jpg" alt="солярий">
-          </li>
         </ul>
+      </section>
+      <section class="school">
+        <a id="education"></a>
+        <div class="school-slider">
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_one.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_two.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_three.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_four.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="contact-socials-box">
         <a id="contact"></a>
@@ -129,7 +167,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/xbeautybyhanna" target="_blank">
+              <a href="https://vk.com/xbeauty_by_hanna" target="_blank">
                 <div>
                   <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
                 </div>
@@ -141,7 +179,7 @@
                 <div>
                   <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
                 </div>
-                <p><i class="fab fa-facebook sil-icon"></i></i>facebook</p>
+                <p><i class="fab fa-facebook sil-icon"></i>facebook</p>
               </a>
             </li>
             <li>
@@ -149,7 +187,7 @@
                 <div>
                   <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
                 </div>
-                <p><i class="far fa-comment-alt sil-icon"></i></i>Отзывы</p>
+                <p><i class="far fa-comment-alt sil-icon"></i>Отзывы</p>
               </a>
             </li>
           </ul>
@@ -158,7 +196,7 @@
           <h2 class="section-title">Как нас найти</h2>
           <ul class="lists contact-list">
             <li>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.250736387799!2d37.651256315931334!3d55.77151698055844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7c5fedd983%3A0xb0da89e31ff48f4b!2z0JrQsNC70LDQvdGH0LXQstGB0LrQuNC5INGC0YPQvy4sIDMvNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1525517730771"  frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.250736387799!2d37.651256315931334!3d55.77151698055844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7c5fedd983%3A0xb0da89e31ff48f4b!2z0JrQsNC70LDQvdGH0LXQstGB0LrQuNC5INGC0YPQvy4sIDMvNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1525517730771" allowfullscreen></iframe>
             </li>
             <li>
               <div class="lists-wrapper contact-info">
@@ -172,7 +210,7 @@
                 </p>
                 <div class="social-links">
                   <a href="https://www.instagram.com/xbeautybyhanna" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-vk"></i></a>
+                  <a href="https://vk.com/xbeauty_by_hanna"><i class="fab fa-vk"></i></a>
                   <a href="#"><i class="fab fa-facebook"></i></a>
                 </div>
               </div>
@@ -187,7 +225,14 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+    integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+    crossorigin="anonymous"></script>
+    <script src="js/preloader.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/slick-start.js"></script>
     <script src="js/script.js">
 
     </script>
